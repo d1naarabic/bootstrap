@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Lora:ital,wght@1,400;1,500&family=Montserrat:ital,wght@0,300;1,300&family=Raleway:ital,wght@1,200;1,400&family=Roboto:ital@1&display=swap');
+
+:root{
+  --hedvig: 'Hedvig Letters Serif', serif;
+--lora: 'Lora', serif;
+--monester: 'Montserrat', sans-serif;
+--real: 'Raleway', sans-serif;
+--roboto: 'Roboto', sans-serif;
+}
+.hedvig{
+  font-family: var(--hedvig);
+}
+.real{
+  font-family: var(--real);
+}
+.monester{
+  font-family: var(--monester);
+}
+.header #fixed {
+  width: 33%;
+  height: 100vh;
+  background-image: url(/img/bgi4.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header #fixed img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+@media only screen and (max-with:768px) {
+  .header #fixed{
+    width: 100%;
+    position: relative;
+  }
+}
